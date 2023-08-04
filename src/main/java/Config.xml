@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+<!--  this is our bean  and 3 ways to insert values into setter method   ,,,,,,,,,primitive types -->
+<!-- 1 way to using property and values element ,2 way using values as an attributes and by suing p schema. -->
+
+<!--  3 way using "P" schema -->
+ <bean class=" com.spring.demospring.Student" name=" student1" p:studentId="225" p:studentName="Vidhi" p:studentAddress="Bhopal"/>
+  
+ 
+ <!-- <property name="studentId"  />
+ 		<value>222</value>
+  </property>
+  
+  <property name="studentName" />
+	     <value>Nidhi</value>
+  </property>
+  
+  <property name="studentAddress" />
+  <value >Pune</value>
+  </property> 
+ 
+ </bean>-->
+   
+ 
+ <!-- create 2nd beans (another object ) . value is used as an attrivute not tag-->
+  <bean class=" com.spring.demospring.Student" name=" student2">
+ 
+ <property name="studentId" value="224" />
+ 	  
+  <property name="studentName" value="ridhi" />
+	   
+  <property name="studentAddress" value="delhi"/>
+ 
+ </bean>
+ </beans>
+ 
